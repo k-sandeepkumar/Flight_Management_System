@@ -25,21 +25,30 @@ The **Flight Management System** is a web-based CRUD (Create, Read, Update, Dele
 - MySQL Database
 - Maven
 
-### Steps to Run the Project
+### Steps to Extract and Run the Project on Your PC
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/k-sandeepkumar/Flight_Management_System.git
    cd Flight_Management_System
    ```
+   Alternatively, you can download the ZIP file from GitHub and extract it manually.
+
 2. **Configure Database:**
-   - Update `application.properties` with your MySQL credentials.
-3. **Build & Run the Application:**
+   - Open `src/main/resources/application.properties`.
+   - Update the database credentials (`spring.datasource.url`, `spring.datasource.username`, `spring.datasource.password`).
+   
+3. **Install Dependencies & Build the Project:**
    ```bash
    mvn clean install
+   ```
+
+4. **Run the Application:**
+   ```bash
    mvn spring-boot:run
    ```
-4. **Access Swagger UI:**
-   - Open [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+5. **Access the API Documentation:**
+   - Open [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) in your browser.
 
 ## 📜 License
 This project is licensed under the [MIT License](LICENSE).
